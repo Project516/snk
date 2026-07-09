@@ -1,4 +1,4 @@
-# 🐍 SNK — GitHub Contribution Snake
+# GitHub Contribution Snake
 
 Automatically generates a snake animation that eats through your GitHub contribution graph!
 
