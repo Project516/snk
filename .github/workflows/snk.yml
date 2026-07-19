@@ -42,7 +42,7 @@ jobs:
             outputs: |
               dist/github-contribution-grid-snake.svg
               dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-          attempt_limit: 6
+          attempt_limit: 10
           attempt_delay: 20000
 
       # push the content of <build_dir> to a branch
