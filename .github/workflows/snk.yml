@@ -15,9 +15,15 @@ on:
     
   
 
+concurrency:
+  # prevent overlapping runs from hammering the same account's GraphQL query
+  # at once, which makes GitHub's resource-limit rejection more likely
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
 jobs:
   generate:
-    permissions: 
+    permissions:
       contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 15
